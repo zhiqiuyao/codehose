@@ -1,0 +1,72 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+@import "../partials/layout";
+
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: {
+    size: 1.6rem;
+    family: $primary-font; // variables inside partials > _variables.scss
+  }
+  color: $color-black-1;
+  background-color: $color-white;
+}
+
+img {
+  max-width: 100%;
+}
+/* --------------------------------
+
+Main Components
+
+-------------------------------- */
+
+header {
+  color: $color-black-2;
+  height: 70px;
+  padding: 13px 15px;
+  .main-nav-item{
+    float: left;
+  }
+  .main-nav-right {
+    float: right;
+  }
+}
+
+.bg-home {
+  background-color: $color-black-2;
+  color: $color-white;
+  padding: 80px 0;
+  min-height: 350px;
+  text-align: center;
+  .container{
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 36px;
+  }
+}
+
+.second-page-block{
+  img{
+    height: 50px;
+    margin-bottom: 5px;
+    max-width: 49px;
+  }
+  .page-block {
+    padding-top: 1.5rem;
+  }
+}
